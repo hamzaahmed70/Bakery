@@ -1,0 +1,274 @@
+body
+{
+    font-family: "Alegreya Sans";
+}
+
+nav img
+{
+    width: 15%;
+}
+section h1
+{
+    font-size: 76px;
+    font-weight: 400;
+}
+section p
+{
+    font-size: 24px;
+    
+}
+section .button .demo
+{
+    background-color: #8e7754;
+    border: 1px solid #8e7754;
+}
+section .button .demo:hover
+{
+    background-color: #FFFFFF;
+}
+.mouse-shape {
+    width: 30px; /* العرض */
+    height: 50px; /* الطول */
+    border: 2px solid white; /* تحديد لون وإطار الشكل */
+    border-radius: 20px; /* جعل الأطراف مستديرة لخلق شكل الماوس */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20%;
+left: 50%;
+    overflow: hidden; /* لإخفاء النقطة عند خروجها من الإطار */
+  }
+  
+  .inner-dot {
+    width: 6px; /* حجم النقطة الداخلية */
+    height: 6px;
+    background-color: white; /* لون النقطة */
+    border-radius: 50%; /* جعلها دائرية */
+    position: absolute;
+    top: 10%; /* بدء النقطة من الأعلى */
+    animation: move-dot 2s infinite; /* حركة النقطة لأعلى ولأسفل بشكل متكرر */
+  }
+  
+  @keyframes move-dot {
+    0% {
+      top: 10%; /* بداية الحركة من أعلى */
+    }
+    50% {
+      top: 70%; /* تحريك النقطة للأسفل */
+    }
+    100% {
+      top: 10%; /* العودة إلى الأعلى */
+    }
+  }
+  
+.icons-list i
+{
+  color: #8E7754;
+  border:1px solid rgba(0, 0, 0, .15);
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  line-height: 44px;
+  font-size: 20px;
+  
+}
+.Location
+{
+  background-color: #F8F8F8;
+}
+.Information
+{
+  background-color: #F8F8F8;
+
+}
+.icons i
+{
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  line-height: 44px;
+  font-size: 20px;
+  background-color: #8e7754;
+  padding-left: 12px;
+}
+.about
+{
+  background-color: #403D38;
+}
+.list-group-item
+{
+  background-color: #403D38;
+border-bottom: 1px solid rgba(255,255,255,0.09);
+
+}
+.list 
+{
+border-bottom: 1px solid rgba(255,255,255,0.09);
+padding-bottom: 10px;
+padding-top: 5px;
+}
+
+
+
+
+.list-group i
+{
+  font-size: 10px;
+}
+.list a
+{
+  transition: all 1s ease;
+}
+
+.list a:hover
+{
+  color: white !important;
+}
+.end
+{
+  background-color: #353330;
+}
+.list-icon i
+{
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  line-height: 44px;
+  font-size: 20px;
+  background-color: #403D38;
+  transition: all 1s ease;
+}
+.list-icon .face:hover
+{
+  background-color: #3B5998;
+}
+.list-icon .goole:hover
+{
+  background-color: #DD4B39;
+}
+.list-icon .link:hover
+{
+  background-color: #007BB5;
+}
+.list-icon .twiter:hover
+{
+  background-color: #00ACED;
+}
+#navbar img
+{
+width: 200px;
+}
+
+
+
+#navbar
+ {
+  transition: background-color 0.3s, color 0.3s; /* تأثير الانتقال */
+  background-color: transparent; /* خلفية شفافة */
+  color: white; /* لون النص الابتدائي */
+}
+
+/* الألوان عند التمرير */
+#navbar.scrolled {
+  background-color: white; /* لون خلفية الناف بار عند التمرير */
+  color: black; /* لون النص عند التمرير */
+}
+
+/* تعديل لون النص داخل الناف بار عند التمرير */
+#navbar.scrolled .nav-link:first-child {
+  color: black; /* لون النص للرابط الأول */
+}
+
+#navbar.scrolled .nav-link:not(:first-child) {
+  color: #6C757D !important  ; /* لون الكتابة عند التمرير */
+}
+
+/* تعديل لون النص للرابط في الحالة العادية */
+.nav-link {
+  color: white; /* لون النص الافتراضي للرابط */
+}
+.why-Bakery
+{
+  background-color: #F8F8F8;
+
+}
+.why-Bakery i
+{
+  color: #8F7854;
+}
+.counter-icon
+{
+  background-color: #8E7754;
+}
+ .offer .title
+{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+  padding-top: 5px;
+
+}
+
+.image-gallery {
+  display: flex;
+  gap: 20px; /* مسافة بين الصور */
+}
+
+.image-item {
+  position: relative;
+  overflow: hidden;
+  width: 450px;
+  height: 400px;
+  cursor: pointer;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  
+  transition: transform 0.3s ease;
+}
+
+.image-item:hover .gallery-image {
+  
+  transform: scale(1.1); /* تكبير بسيط عند التمرير */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* تراكب لون RGBA */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-item:hover .overlay {
+  opacity: 1;
+}
+
+.search-icon {
+  color: white;
+  font-size: 2rem;
+}
+.Contact .btt
+{
+  background-color: #8E7754;
+}
+.Contact .btt:hover
+{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.dropdown .dropdown-menu 
+{
+  background-color: #4E4E4E;
+}
+.dropdown .dropdown-menu li a:hover
+{
+  background-color: #AE9768 !important;
+}
